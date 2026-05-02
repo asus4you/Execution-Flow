@@ -4,6 +4,8 @@ on:
     branches:
       - main
       - master
+    paths:
+      - ".github/workflows/execution-flow.yaml"
 jobs:
   lint:
     runs-on: ubuntu-latest
