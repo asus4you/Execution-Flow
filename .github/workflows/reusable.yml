@@ -5,7 +5,7 @@ on:
       artifact-names:
         description: The name of the deployable artifact files 
         required: false 
-        # default: dist
+        # default: dist #
         type: string
 jobs:
   CodeFromReusableDeploy:
