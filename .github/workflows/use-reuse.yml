@@ -5,7 +5,7 @@ on:
       - main
       - master
     paths:
-      - "**/reusable.yml"
+      - "**/use-reuse.yml"
 jobs:
   lint:
     runs-on: ubuntu-latest
