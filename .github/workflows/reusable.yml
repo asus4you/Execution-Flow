@@ -1,7 +1,7 @@
 name: Reusable Deploy
 on: workflow_call
 jobs:
-  deploy:
+  CodeFromReusableDeploy:
     runs-on: ubuntu-latest
     steps:
       - name: Code Checkout
