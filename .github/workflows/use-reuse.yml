@@ -4,8 +4,8 @@ on:
     branches:
       - main
       - master
-    # paths:
-    #   - "**/execution-flow.yml"
+    paths:
+      - "**/reusable.yml"
 jobs:
   lint:
     runs-on: ubuntu-latest
