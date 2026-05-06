@@ -72,6 +72,17 @@
           with:
             name: dist-files
             path: dist
+    deploy:
+      needs: build
+      uses: ./.github/workflows/reusable.yml
+      with:
+        artifact-name: dist-files
+    print-deploy-results:
+      needs: deploy
+      runs-on: ubuntu-latest
+      steps:
+        - name: print deploy output
+          run: echo "${{ needs.deploy.outputs.result }}"   
     reports:
       runs-on: ubuntu-latest
       needs: [test, lint]
