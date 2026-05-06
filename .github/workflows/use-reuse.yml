@@ -76,7 +76,7 @@
       needs: build
       uses: ./.github/workflows/reusable.yml
       with:
-        artifact-name: dist-files
+        artifact-names: dist-files
     print-deploy-results:
       needs: deploy
       runs-on: ubuntu-latest
